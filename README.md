@@ -12,24 +12,18 @@ And to use the most powerful version of the model, be sure to check out the [liv
 
 ## Setup
 ```
-git clone https://github.com/etched-ai/open-oasis.git
+git clone https://github.com/dgrtygry2/open-oasis.git
 cd open-oasis
 # Install pytorch
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
 # Install other dependencies
 pip install einops diffusers timm av
 ```
-
-## Download the model weights
-Inside the `open-oasis/` directory, run:
-```
-huggingface-cli login
-huggingface-cli download Etched/oasis-500m oasis500m.safetensors # DiT checkpoint
-huggingface-cli download Etched/oasis-500m vit-l-20.safetensors  # ViT VAE checkpoint
+To download a premade version of this program with the models, Go to the releases.
 ```
 
 ## Basic Usage
-We include a basic inference script that loads a prompt frame from a video and generates additional frames conditioned on actions.
+Only use this if you are training any data. run "game.py" if you want to play the game offline.
 ```
 python generate.py
 ```
